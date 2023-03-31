@@ -135,6 +135,6 @@ console.log(car.power);
 
 console.log(car.rentalRate());
 
-console.log(Vehicle.return);
+console.log(Vehicle.return());
 
-console.log(Vehicle.rent);
+console.log(Vehicle.rent());
