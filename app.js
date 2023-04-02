@@ -108,12 +108,12 @@ var Bike = /** @class */ (function (_super) {
 }(Vehicle));
 // check functionality of the rent and return
 var car = new Car("alto", 2020, 50000, 800, "best");
-console.log("model", car.VehicalModel);
-console.log("vehical year", car.VehicalYear);
-console.log("rentd", car.rented);
-console.log("type", car.type);
-console.log("condition", car.condition);
-console.log("power", car.power);
-console.log("rentalrate", car.rentalRate());
-Vehicle.return();
+console.log("model : ", car.VehicalModel);
+console.log("vehical year : ", car.VehicalYear);
+console.log("rent : ", car.rented);
+console.log("type : ", car.type);
+console.log("condition : ", car.condition);
+console.log("power : ", car.power);
+console.log("rentalrate : ", car.rentalRate());
 Vehicle.Rented();
+Vehicle.return();

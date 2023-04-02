@@ -124,20 +124,20 @@ class Bike extends Vehicle {
 
 let car = new Car("alto", 2020, 50000, 800, "best");
 
-console.log("model", car.VehicalModel);
+console.log("model : ", car.VehicalModel);
 
-console.log("vehical year", car.VehicalYear);
+console.log("vehical year : ", car.VehicalYear);
 
-console.log("rentd", car.rented);
+console.log("rent : ", car.rented);
 
-console.log("type", car.type);
+console.log("type : ", car.type);
 
-console.log("condition", car.condition);
+console.log("condition : ", car.condition);
 
-console.log("power", car.power);
+console.log("power : ", car.power);
 
-console.log("rentalrate", car.rentalRate());
-
-Vehicle.return();
+console.log("rentalrate : ", car.rentalRate());
 
 Vehicle.Rented();
+Vehicle.return();
+
