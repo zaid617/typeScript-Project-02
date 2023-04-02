@@ -41,20 +41,22 @@ var Vehicle = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    Vehicle.rent = function () {
+    Vehicle.Rented = function () {
         if (!this.rent) {
-            return true;
+            this.rent = true;
+            console.log("this is now on rent");
         }
         else {
-            return false;
+            console.log("this is already rented");
         }
     };
     Vehicle.return = function () {
-        if (!this.return) {
-            return true;
+        if (!this.rent) {
+            console.log("this is not on rent");
         }
         else {
-            return false;
+            this.rent = false;
+            console.log("this is now off rent");
         }
     };
     return Vehicle;
@@ -104,14 +106,14 @@ var Bike = /** @class */ (function (_super) {
     };
     return Bike;
 }(Vehicle));
-// check functionality of the rent and return 
+// check functionality of the rent and return
 var car = new Car("alto", 2020, 50000, 800, "best");
-console.log(car.VehicalModel);
-console.log(car.VehicalYear);
-console.log(car.rented);
-console.log(car.type);
-console.log(car.condition);
-console.log(car.power);
-console.log(car.rentalRate());
-console.log(Vehicle.return());
-console.log(Vehicle.rent());
+console.log("model", car.VehicalModel);
+console.log("vehical year", car.VehicalYear);
+console.log("rentd", car.rented);
+console.log("type", car.type);
+console.log("condition", car.condition);
+console.log("power", car.power);
+console.log("rentalrate", car.rentalRate());
+Vehicle.return();
+Vehicle.Rented();
